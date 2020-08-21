@@ -1,0 +1,11 @@
+def atm():
+    deposit = 10000
+    withdraw = int(input('enter the amount'))
+    current_balance = deposit-withdraw
+    printed_receipt = str(input('do you want a printed script - yes or no'))
+    if deposit>=withdraw:
+        print('collect your cash and remove your card','and your current balance is $',current_balance)
+    else:
+        print('no enough cash in your account')
+
+atm()
